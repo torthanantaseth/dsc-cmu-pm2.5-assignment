@@ -30,3 +30,12 @@ data/processed/openmeteo_air_hourly.csv
 data/processed/openmeteo_weather_hourly.csv
 data/processed/openmeteo_forecast_hourly.csv
 data/processed/firms_hotspots.csv
+
+# ---------------------------------------------------------------- drafts
+# Superseded by report/PM25_Northern_Thailand_Report.docx
+report/DRAFT_background_approach_conclusion.md
+report/DRAFT_method_results.md
+
+report/PRESENTATION_SCRIPT.md
+report/build_report.js
+report/build_slides.js
