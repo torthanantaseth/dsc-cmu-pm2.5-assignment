@@ -1,0 +1,14 @@
+# Verified working with these versions. Pin them before you submit:
+# run `pip freeze | grep -iE "pandas|numpy|requests|scikit-learn|matplotlib|urllib3|notebook|ipykernel"`
+# in YOUR environment and paste the result here, so the marker installs what you used.
+
+pandas>=2.2
+numpy>=1.26
+requests>=2.31
+scikit-learn>=1.4
+matplotlib>=3.8
+urllib3>=2.0
+
+# for the notebook only
+notebook>=7.0
+ipykernel>=6.29

@@ -1,0 +1,4 @@
+# The assignment requires that data/raw/ holds exactly what the API returned.
+# Git on Windows normally rewrites line endings on commit, which would change
+# those bytes. This turns that off for every file in the repository.
+* -text

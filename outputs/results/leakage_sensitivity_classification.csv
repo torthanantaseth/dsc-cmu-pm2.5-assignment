@@ -1,0 +1,6 @@
+set,model,recall,precision,missed,false_alarms,threshold
+-,baseline persistence,0.822,0.822,8,8,-
+A safe,logreg,0.911,0.577,4,30,0.32
+A safe,hgb,0.911,0.488,4,43,0.001
+B safe+fc,logreg,0.911,0.594,4,28,0.352
+B safe+fc,hgb,0.911,0.441,4,52,0.0

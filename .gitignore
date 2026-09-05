@@ -1,0 +1,32 @@
+# ---------------------------------------------------------------- secrets
+# NEVER commit the API key
+firms_key.txt
+.env
+
+# ---------------------------------------------------------------- python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------- editor / OS
+.vscode/
+.DS_Store
+Thumbs.db
+~$*
+
+# ---------------------------------------------------------------- data
+# data/raw/ is deliberately NOT ignored. The assignment requires that
+# data/raw/ contains exactly what the API returned, so all 49 responses
+# are committed (about 22 MB).
+#
+# data/processed/ is DERIVED. Two files are kept because they let anyone
+# re-run the analysis and the model without an API key:
+#     daily_panel.csv     the joined daily panel
+#     model_table.csv     the modelling table with features and targets
+# The rest are large intermediates that `python run_all.py` rebuilds.
+data/processed/openmeteo_air_hourly.csv
+data/processed/openmeteo_weather_hourly.csv
+data/processed/openmeteo_forecast_hourly.csv
+data/processed/firms_hotspots.csv

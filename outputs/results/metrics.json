@@ -1,0 +1,132 @@
+{
+  "target_statement": "TARGET DECLARATION (Rule 1)\n\n  Regression      the mean of the 24 hourly PM2.5 values for calendar day t+1,\n                  Asia/Bangkok local time, at mueang_chiang_mai, in ug/m3.\n  Classification  whether that same daily mean exceeds 37.5 ug/m3.\n\n  Moment of prediction: the end of day t. Everything the model sees is either\n  observed on or before day t, or is a weather forecast that was issued before\n  day t+1 began. No value from day t+1 other than the target itself enters the\n  feature set.",
+  "location": "mueang_chiang_mai",
+  "standard_ugm3": 37.5,
+  "train_end": "2025-05-31",
+  "test_start": "2025-06-01",
+  "n_train": 882,
+  "n_test": 454,
+  "n_features": 115,
+  "regression": {
+    "baseline_persistence": {
+      "mae": 4.118208516886931,
+      "rmse": 6.043518438682717,
+      "r2": 0.8018798513241951,
+      "mae_burning_season": 6.845555555555555,
+      "mae_transition_days": 14.079166666666666
+    },
+    "ridge": {
+      "cv_mae_mean": 4.382894305702701,
+      "cv_mae_std": 1.0897643626490026,
+      "mae": 4.303377898062619,
+      "rmse": 6.260571536698554,
+      "r2": 0.7873933193430254,
+      "mae_burning_season": 6.529290891035288,
+      "mae_transition_days": 11.790848239716155
+    },
+    "hgb": {
+      "cv_mae_mean": 5.043709362336019,
+      "cv_mae_std": 1.6125972084230806,
+      "mae": 3.946012480476154,
+      "rmse": 5.851860800864951,
+      "r2": 0.8142465382364217,
+      "mae_burning_season": 6.424391218347138,
+      "mae_transition_days": 12.097630123053637
+    },
+    "_best": "hgb"
+  },
+  "classification": {
+    "baseline_majority": {
+      "accuracy": 0.9008810572687225,
+      "recall": 0.0,
+      "precision": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          409,
+          0
+        ],
+        [
+          45,
+          0
+        ]
+      ]
+    },
+    "baseline_persistence": {
+      "accuracy": 0.9647577092511013,
+      "recall": 0.8222222222222222,
+      "precision": 0.8222222222222222,
+      "f1": 0.8222222222222222,
+      "confusion_matrix": [
+        [
+          401,
+          8
+        ],
+        [
+          8,
+          37
+        ]
+      ]
+    },
+    "logreg": {
+      "cv_pr_auc_mean": 0.352671156973702,
+      "cv_pr_auc_std": 0.3060377203179686,
+      "accuracy": 0.9361233480176211,
+      "recall": 0.8666666666666667,
+      "precision": 0.6290322580645161,
+      "f1": 0.7289719626168224,
+      "pr_auc": 0.8774233100061202,
+      "roc_auc": 0.9786471067644662,
+      "confusion_matrix": [
+        [
+          386,
+          23
+        ],
+        [
+          6,
+          39
+        ]
+      ],
+      "threshold": 0.5
+    },
+    "hgb": {
+      "cv_pr_auc_mean": 0.39877906528731655,
+      "cv_pr_auc_std": 0.2681324831622921,
+      "accuracy": 0.947136563876652,
+      "recall": 0.5777777777777777,
+      "precision": 0.8387096774193549,
+      "f1": 0.6842105263157895,
+      "pr_auc": 0.824384292310076,
+      "roc_auc": 0.969682151589242,
+      "confusion_matrix": [
+        [
+          404,
+          5
+        ],
+        [
+          19,
+          26
+        ]
+      ],
+      "threshold": 0.5
+    },
+    "_best": "logreg",
+    "operating_point_recall90": {
+      "threshold": 0.34403594355391187,
+      "recall": 0.9111111111111111,
+      "precision": 0.6119402985074627,
+      "false_alarms": 26,
+      "missed_dangerous_days": 4,
+      "confusion_matrix": [
+        [
+          383,
+          26
+        ],
+        [
+          4,
+          41
+        ]
+      ]
+    }
+  }
+}

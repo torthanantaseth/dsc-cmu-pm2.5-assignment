@@ -1,0 +1,49 @@
+MIT License
+
+Copyright (c) 2026 Thana Thanantaseth
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+--------------------------------------------------------------------------
+DATA IS NOT COVERED BY THE LICENCE ABOVE
+
+The MIT licence covers the code in this repository. The files under data/
+were retrieved from third parties and remain subject to their own terms.
+
+  Air quality (data/raw/openmeteo_air_*.json)
+      Copernicus Atmosphere Monitoring Service (CAMS), served through
+      Open-Meteo. Open-Meteo data is CC BY 4.0. Contains modified
+      Copernicus Atmosphere Monitoring Service information; neither the
+      European Commission nor ECMWF is responsible for any use of it.
+
+  Weather and historical forecast (data/raw/openmeteo_weather_*.json,
+  data/raw/openmeteo_forecast_*.json)
+      ERA5 and the Open-Meteo historical forecast archive, served through
+      Open-Meteo, CC BY 4.0.
+
+  Ground stations (data/raw/air4thai_current.json)
+      Air4Thai, Pollution Control Department, Ministry of Natural Resources
+      and Environment, Thailand.
+
+  Fire detections
+      NASA FIRMS, VIIRS and MODIS active fire products, courtesy of NASA
+      Earthdata. Attribution requested, no redistribution restriction.
+
+Anyone reusing the data files should credit these sources, not this
+repository.

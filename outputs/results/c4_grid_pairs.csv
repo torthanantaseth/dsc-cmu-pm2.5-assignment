@@ -1,0 +1,16 @@
+point_a,point_b,max_abs_diff,mean_abs_diff,identical
+cm_mueang,cm_hang_dong,0.0,0.0,True
+cm_mae_chaem,cm_omkoi,11.0,2.8262,False
+cm_mae_chaem,cm_chiang_dao,18.1,4.3863,False
+cm_chiang_dao,cm_omkoi,18.4,5.7327,False
+cm_hang_dong,cm_chiang_dao,20.0,5.1905,False
+cm_mueang,cm_chiang_dao,20.0,5.1905,False
+cm_mueang,cm_mae_chaem,21.4,6.7673,False
+cm_hang_dong,cm_mae_chaem,21.4,6.7673,False
+cm_mueang,cm_san_sai,22.1,4.6863,False
+cm_san_sai,cm_hang_dong,22.1,4.6863,False
+cm_mueang,cm_omkoi,28.4,7.6411,False
+cm_hang_dong,cm_omkoi,28.4,7.6411,False
+cm_san_sai,cm_chiang_dao,30.2,9.2911,False
+cm_san_sai,cm_mae_chaem,32.0,10.6226,False
+cm_san_sai,cm_omkoi,34.9,11.1131,False

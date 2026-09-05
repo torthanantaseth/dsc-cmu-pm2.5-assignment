@@ -1,0 +1,12 @@
+step,rows,note
+load openmeteo_air_hourly.csv,128352,"4 locations, 2023-01-01 00:00:00 .. 2026-08-29 23:00:00"
+load openmeteo_weather_hourly.csv,128352,"4 locations, 2023-01-01 00:00:00 .. 2026-08-29 23:00:00"
+load openmeteo_forecast_hourly.csv,128352,"4 locations, 2023-01-01 00:00:00 .. 2026-08-29 23:00:00"
+daily after >=18h coverage rule,5348,dropped 0 incomplete days
+wx_daily after >=18h coverage rule,5348,dropped 0 incomplete days
+fc_daily after >=18h coverage rule,5348,dropped 0 incomplete days
+inner join air x weather,5348,"air=5348, weather=5348, lost=0"
+left join forecast-for-tomorrow,5348,unchanged from 5348; 4 rows without forecast
+load firms_hotspots.csv,334388,
+firms daily hotspot counts,6267,
+left join FIRMS hotspots,5348,unchanged from 5348

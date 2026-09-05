@@ -1,0 +1,7 @@
+loc_a,loc_b,max_abs_diff,mean_abs_diff,pearson_r,identical
+mae_hong_son,mueang_lampang,69.0,6.7381,0.7885,False
+mae_hong_son,mueang_chiang_mai,75.0,10.8512,0.7717,False
+mueang_chiang_mai,mueang_lampang,84.8,7.5452,0.7933,False
+mueang_chiang_mai,mueang_chiang_rai,124.5,7.9841,0.7645,False
+mueang_chiang_rai,mueang_lampang,128.1,6.2791,0.8186,False
+mae_hong_son,mueang_chiang_rai,131.4,8.6265,0.8208,False

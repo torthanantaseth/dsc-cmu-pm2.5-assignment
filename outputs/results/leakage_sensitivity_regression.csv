@@ -1,0 +1,6 @@
+set,model,mae_all,mae_season,mae_transition
+-,baseline persistence,4.118,6.846,14.079
+A safe,ridge,4.546,6.698,11.903
+A safe,hgb,4.244,6.788,11.945
+B safe+fc,ridge,4.432,6.757,12.304
+B safe+fc,hgb,4.08,6.56,11.7

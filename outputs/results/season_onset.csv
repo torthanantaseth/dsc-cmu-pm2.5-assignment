@@ -1,0 +1,5 @@
+year,onset_doy,end_doy,onset_date,end_date,length_days,days_over_roll7,peak,peak_doy
+2023,33,107,02 Feb,17 Apr,75,42,70.3,89
+2024,80,81,20 Mar,21 Mar,2,2,47.5,75
+2025,52,100,21 Feb,10 Apr,49,26,91.2,81
+2026,64,121,05 Mar,01 May,58,42,99.4,107
